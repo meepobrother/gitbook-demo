@@ -1,0 +1,19 @@
+{
+  "name": "gitbook-demo",
+  "version": "1.0.0",
+  "description": "- demos",
+  "main": "index.js",
+  "scripts": {
+    "git": "git add . && git commit -m 'save to back' && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meepobrother/gitbook-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meepobrother/gitbook-demo/issues"
+  },
+  "homepage": "https://github.com/meepobrother/gitbook-demo#readme"
+}
