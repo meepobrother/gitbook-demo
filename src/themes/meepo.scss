@@ -1,5 +1,9 @@
-@import "color";
-$pre: 'meepo__';
+@import "global";
+@import "normalize";
+@import "common";
+@import "./components/index";
+
+
 body,html{
     background: $oc-gray-1;
     width: 100%;
