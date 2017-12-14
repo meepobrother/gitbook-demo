@@ -1,17 +1,35 @@
 @import "../../global";
 $btn: #{$pre}btn;
-button,
-input {
-    &.#{$btn} {
-        width: 100%;
-        border-width: 0;
+$ttnDefaultGap: 5px;
+
+.#{$btn} {
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    &:focus {
         outline: 0;
-        -webkit-appearance: none;
-        &:focus {
-            outline: 0;
-        }
-        .#{$btn}_inline{
-            width: auto;
+    }
+    .#{$btn}_inline {
+        width: auto;
+    }
+}
+
+.#{$btn}_area_inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .#{$btn} {
+        margin-right: $ttnDefaultGap;
+        width: 100%;
+        flex: 1;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }

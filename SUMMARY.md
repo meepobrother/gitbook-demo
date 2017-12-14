@@ -3,7 +3,8 @@
 * [概述总览](README.md)
 * [常用技术栈]()
     * [工具类]()
-        * [Gitbook]()
+        * [Gitbook](docs/tools/git.md)
+        * [npx](docs/tools/npx.md)
     * [Angular]()
         * [Ionic]()
     * [Vue]()
@@ -14,6 +15,6 @@
         * [nestjs]()
         * [socket.io]()
     * [scss]()
-        * [color](scss/color.md)
-        * [cli](scss/cli.md)
+        * [color](docs/scss/color.md)
+        * [cli](docs/scss/cli.md)
 
