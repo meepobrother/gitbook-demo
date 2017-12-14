@@ -1,0 +1,32 @@
+@import "color";
+$pre: 'meepo__';
+body,html{
+    background: $oc-gray-1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: $oc-gray-6;
+    &:link, &:visited, &:hover, &:active{
+        text-decoration: none;
+        color: $oc-gray-7;
+    }
+}
+
+.#{$pre}container{
+    color: $oc-gray-7;
+    .#{$pre}container_title{
+        font-size: 2em;
+    }
+    p{
+        text-align: right;
+    }
+}
