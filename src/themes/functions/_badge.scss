@@ -1,0 +1,14 @@
+@mixin badge($bg: $oc-gray-6, $padding-y: 5px, $padding-x:5px) {
+    color: color-yiq($bg);
+    background-color: $bg;
+    padding: $padding-y $padding-x;
+    &:empty {
+        display: none;
+    }
+    .btn {
+        .badge {
+            position: relative;
+            top: -1px;
+        }
+    }
+}

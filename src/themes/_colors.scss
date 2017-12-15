@@ -1,0 +1,30 @@
+
+@import "./veriables/color";
+@each $key,
+$val in $oc-color-list {
+    @each $name,
+    $color in $key {
+        .text_#{$val}_#{$name} {
+            color: $color !important;
+        }
+        .bg_#{$val}_#{$name} {
+            background-color: $color !important;
+        }
+    }
+}
+
+.text_white {
+    color: $oc-white !important;
+}
+
+.bg_white {
+    background-color: $oc-white !important;
+}
+
+.text_black {
+    color: $oc-black !important;
+}
+
+.bg_black {
+    background-color: $oc-black !important;
+}

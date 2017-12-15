@@ -1,10 +1,10 @@
 @import "global";
 @import "normalize";
 @import "common";
+@import "colors";
 @import "./components/index";
-
-
-body,html{
+body,
+html {
     background: $oc-gray-1;
     width: 100%;
     height: 100%;
@@ -16,22 +16,17 @@ body,html{
     padding: 0px;
 }
 
-a{
-    text-decoration: none;
-    color: $oc-gray-6;
-    &:link, &:visited, &:hover, &:active{
-        text-decoration: none;
-        color: $oc-gray-7;
-    }
+a {
+    @include link($oc-gray-7);
 }
 
-.#{$pre}container{
+.#{$pre}container {
     color: $oc-gray-7;
     width: 80%;
-    .#{$pre}container_title{
+    .#{$pre}container_title {
         font-size: 2em;
     }
-    p{
+    p {
         text-align: right;
     }
 }

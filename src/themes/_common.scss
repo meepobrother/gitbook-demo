@@ -10,32 +10,3 @@
     border-width: 1px;
     background-color: transparent;
 }
-
-@each $key,
-$val in $oc-color-list {
-    @each $name,
-    $color in $key {
-        .text_#{$val}_#{$name} {
-            color: $color;
-        }
-        .bg_#{$val}_#{$name} {
-            background-color: $color;
-        }
-    }
-}
-
-.text_white {
-    color: $oc-white;
-}
-
-.bg_white {
-    background-color: $oc-white;
-}
-
-.text_black {
-    color: $oc-black;
-}
-
-.bg_black {
-    background-color: $oc-black;
-}

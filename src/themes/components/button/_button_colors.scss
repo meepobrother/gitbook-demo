@@ -1,0 +1,9 @@
+@each $key,
+$val in $oc-color-list {
+    @each $name,
+    $color in $key {
+        .#{$btn}_#{$val}_#{$name} {
+            @include button-color($color);
+        }
+    }
+}

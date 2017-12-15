@@ -1,6 +1,6 @@
 @import "../../global";
 $btn: #{$pre}btn;
-$ttnDefaultGap: 5px;
+$btnDefaultGap: 5px;
 
 .#{$btn} {
     width: 100%;
@@ -12,6 +12,9 @@ $ttnDefaultGap: 5px;
     align-items: center;
     justify-content: center;
     height: 2em;
+    @include button-color();
+    cursor: pointer;
+    
     &:focus {
         outline: 0;
     }
@@ -25,7 +28,7 @@ $ttnDefaultGap: 5px;
     flex-direction: row;
     align-items: center;
     .#{$btn} {
-        margin-right: $ttnDefaultGap;
+        margin-right: $btnDefaultGap;
         width: 100%;
         flex: 1;
         &:last-child {
@@ -33,3 +36,5 @@ $ttnDefaultGap: 5px;
         }
     }
 }
+
+

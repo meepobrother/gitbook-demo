@@ -1,0 +1,10 @@
+@mixin button-color($bg: $oc-gray-6) {
+    color: color-yiq($bg);
+    background-color: $bg;
+    &:hover {
+        color: lighten(color-yiq($bg), 20%);
+    }
+    &:active {
+        color: darken(color-yiq($bg), 5%);
+    }
+}

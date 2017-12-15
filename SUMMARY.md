@@ -19,4 +19,5 @@
     * [scss]()
         * [color](docs/scss/color.md)
         * [cli](docs/scss/cli.md)
-
+        * [functions](docs/scss/functions.md)
+    * [php]()

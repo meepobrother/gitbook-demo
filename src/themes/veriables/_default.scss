@@ -1,0 +1,26 @@
+$font-family: "Helvetica Neue",
+Helvetica,
+"PingFang SC",
+"Hiragino Sans GB",
+"Microsoft YaHei",
+"微软雅黑",
+Arial,
+sans-serif;
+$code-family: Consolas,
+Menlo,
+Courier,
+monospace;
+$font-size-base: 12px;
+$text-color: #666;
+$line-height-base: 1.5;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$border-radius-base: 6px;
+$border-radius-sm: 4px;
+/* link */
+$link-color: #2db7f5;
+$link-hover-color: tint($link-color, 20%);
+$link-active-color: shade($link-color, 5%);
+$link-hover-decoration: none;
+
+
+$enable-rounded: true !default;
