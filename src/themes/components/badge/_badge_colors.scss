@@ -4,7 +4,7 @@
 $val in $oc-color-list {
     @each $name,
     $color in $key {
-        .#{$btn}_#{$val}_#{$name} {
+        .badge_#{$val}_#{$name} {
             @include hover-color($color);
         }
     }

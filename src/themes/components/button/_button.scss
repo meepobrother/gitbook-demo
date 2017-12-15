@@ -1,6 +1,5 @@
 @import "../../global";
-$btn: #{$pre}btn;
-$btnDefaultGap: 5px;
+
 
 .#{$btn} {
     width: 100%;
@@ -12,7 +11,7 @@ $btnDefaultGap: 5px;
     align-items: center;
     justify-content: center;
     height: 2em;
-    @include button-color();
+    @include hover-color();
     cursor: pointer;
     
     &:focus {

@@ -9,6 +9,7 @@ $val in $oc-color-list {
         }
         .bg_#{$val}_#{$name} {
             background-color: $color !important;
+            @include hover-color($color);
         }
     }
 }

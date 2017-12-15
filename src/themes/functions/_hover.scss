@@ -1,0 +1,13 @@
+@mixin hover-color($bg: $oc-gray-6) {
+    $color: color-yiq($bg);
+    color: $color;
+    background-color: $bg;
+    &:hover {
+        color: lighten($color, 20%);
+        background-color: darken($bg, 5%);
+    }
+    &:active {
+        color: darken($color, 5%);
+        background-color: lighten($bg, 20%);
+    }
+}

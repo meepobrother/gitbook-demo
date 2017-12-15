@@ -1,7 +1,6 @@
-@import "../global";
+@import "../../global";
 .badge {
     @include badge();
-    @include border-radius();
     display: inline-block;
     line-height: 1;
     text-align: center;

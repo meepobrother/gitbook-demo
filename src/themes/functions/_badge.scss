@@ -1,14 +1,9 @@
-@mixin badge($bg: $oc-gray-6, $padding-y: 5px, $padding-x:5px) {
-    color: color-yiq($bg);
-    background-color: $bg;
+@mixin badge($bg: $oc-gray-2, $padding-y: 5px, $padding-x:8px) {
     padding: $padding-y $padding-x;
+    @include border-radius($padding-y);
+    @include hover-color($bg);
     &:empty {
         display: none;
     }
-    .btn {
-        .badge {
-            position: relative;
-            top: -1px;
-        }
-    }
+    cursor: pointer;
 }
